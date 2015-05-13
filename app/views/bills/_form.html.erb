@@ -1,0 +1,33 @@
+<%= form_for(@bill) do |f| %>
+  <% if @bill.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bill.errors.count, "error") %> prohibited this bill from being saved:</h2>
+
+      <ul>
+      <% @bill.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :customer_name %><br>
+    <%= f.text_field :customer_name, data: {autocomplete_source: Customer.order(:name).map(&:name)} %>
+  </div>
+  <div class="field">
+    <%= f.label :bill_amount %><br>
+    <%= f.text_field :bill_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :valid_up_to %><br>
+    <%= f.date_select :valid_up_to %>
+  </div>
+  <div class="field">
+    <%= f.label :transaction_type %><br>
+    <%= f.text_field :transaction_type %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

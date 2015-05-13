@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p> 
+  <strong>Name:</strong>
+  <%= @customer.name %>
+</p>
+
+<p>
+  <strong>Customer ID:</strong>
+  <%= @customer.customer_id %>
+</p>
+
+<p>
+  <strong>Mac address:</strong>
+  <%= @customer.mac_address %>
+</p>
+
+<p>
+  <strong>Ip address:</strong>
+  <%= @customer.ip_address %>
+</p>
+
+<p>
+  <strong>Connection type:</strong>
+  <%= @customer.connection_type %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @customer.status %>
+</p>
+
+<p>
+  <strong>Billing code:</strong>
+  <%= @customer.billing_code %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @customer.address %>
+</p>
+
+<p>
+  <strong>Contact no:</strong>
+  <%= @customer.contact_no %>
+</p>
+
+<p>
+  <strong>Contact person:</strong>
+  <%= @customer.contact_person %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @customer.email %>
+</p>
+
+<%= link_to 'Edit', edit_customer_path(@customer) %> |
+<%= link_to 'Back', customers_path %>
