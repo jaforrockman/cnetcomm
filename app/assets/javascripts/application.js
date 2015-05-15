@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require dataTables/jquery.dataTables
 //= require jquery.turbolinks
 //= require jquery-ui
 //= require jquery-ui/datepicker

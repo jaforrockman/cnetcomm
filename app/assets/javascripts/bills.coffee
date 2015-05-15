@@ -7,3 +7,9 @@ jQuery ->
 	  source: $('#bill_customer_name').data('autocomplete-source')
 ##########
 	$('#bill_valid_up_to').datepicker (dateFormat: 'dd-mm-yy')
+
+##########
+	
+	$("#bills_list").dataTable()
+	 sPaginationType: "full_numbers"
+	 bJQueryUI: true
