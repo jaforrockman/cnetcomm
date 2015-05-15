@@ -13,8 +13,10 @@ gem 'jquery-ui-rails', '~> 5.0.3'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'filterrific'
 		
 gem 'will_paginate', '~> 3.0.7'
+gem 'will_paginate-bootstrap', '~> 1.0.1'
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug'

@@ -1,8 +1,9 @@
-<h1>This page is for listing all customers</h1>
+<h1 align="center"><u>LIST OF ALL CUSTOMERS</u></h1>
+<br>
 
 
 
-	<table id="customer_list" class="table table-hover" >
+	<table  class="table table-hover" style="font-size:10px">
     <thead  bgcolor="#008AB8">
       <tr>
         <th>Name</th>
@@ -35,3 +36,4 @@
       </tbody>
       <%end%>
   </table>
+  <%=will_paginate @customers, renderer: BootstrapPagination::Rails, previous_label: "Previous", next_label: "Next"%>
