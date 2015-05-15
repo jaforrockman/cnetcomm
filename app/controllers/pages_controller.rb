@@ -6,6 +6,10 @@ class PagesController < ApplicationController
   	@customers = Customer.all
   end
 
+  def bill_list
+  	@bills = Bill.all
+  end
+
   def about
   end
   

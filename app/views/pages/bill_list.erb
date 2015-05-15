@@ -1,0 +1,24 @@
+
+<h1>All Customers Bill Goes Here Below</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Customer ID</th>
+      <th>Bill amount</th>
+      <th>Valid up to</th>
+      <th>Transaction type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bills.each do |bill| %>
+      <tr>
+        <td><%= bill.customer_id %></td>
+        <td><%= bill.bill_amount %></td>
+        <td><%= bill.valid_up_to %></td>
+        <td><%= bill.transaction_type %></td>
+       
+      </tr>
+      <%end%>

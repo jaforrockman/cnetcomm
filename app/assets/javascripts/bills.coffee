@@ -5,3 +5,5 @@
 jQuery ->
 	$('#bill_customer_name').autocomplete
 	  source: $('#bill_customer_name').data('autocomplete-source')
+##########
+	$('#bill_valid_up_to').datepicker (dateFormat: 'dd-mm-yy')
