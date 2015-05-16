@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   end
 
   def customer_list
-     @customers = Customer.all.order("created_at ASC").paginate(page: params[:page],per_page:20)  
+     @customers = Bill.all 
   end
 def admin_panel
     

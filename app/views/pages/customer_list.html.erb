@@ -1,8 +1,7 @@
 <h1 align="center"><u>LIST OF ALL CUSTOMERS</u></h1>
 <br>
 
-<table id="client_list" class="table table-hover" style="font-size:10px"
-style="font-size:10px">
+<table id="client_list" class="table table-hover" style="font-size:10px"style="font-size:10px">
     <thead  bgcolor="#008AB8">
       <tr>
         <th>Name</th>
@@ -36,9 +35,6 @@ style="font-size:10px">
     </tbody>
   </table>
   
-
-<%=will_paginate @customers, renderer: BootstrapPagination::Rails, previous_label: "Previous", next_label: "Next"%>
-
 <script type="text/javascript">
 $(document).ready(function(){
     $('#client_list').dataTable();
