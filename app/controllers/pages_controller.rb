@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   end
 
   def customer_list
-     @customers = Bill.all 
+     @customers = Customer.all 
   end
 def admin_panel
     
