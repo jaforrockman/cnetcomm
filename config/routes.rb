@@ -1,12 +1,15 @@
 Rails.application.routes.draw do
   
+  devise_for :users
+
   root to: 'pages#home'
   get '/about'=> 'pages#about'
   get '/customer_list'=> 'pages#customer_list'
   get '/bill_list'=> 'pages#bill_list'
+  get '/admin_panel'=> 'pages#admin_panel'
   resources :bills
-
   resources :customers
+  resources :users
   
   
 

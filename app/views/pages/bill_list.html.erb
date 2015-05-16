@@ -14,8 +14,7 @@
       <th>Transaction type</th>
       <th>Valid up to</th>     
       <th>Bill amount</th>
-      
-    </tr>
+     </tr>
   </thead>
 
   <tbody>
@@ -29,7 +28,12 @@
         <td><%= bill.transaction_type %></td>
         <td><%= bill.valid_up_to.strftime "%d %B %Y" %></td>
         <td style="text-align:right"><%= bill.bill_amount %> </td>
-       
-      </tr>
+       </tr>
       <%end%>
   </table>
+
+  <script type="text/javascript">
+$(document).ready(function(){
+    $('#bills_list').dataTable();
+});
+</script>

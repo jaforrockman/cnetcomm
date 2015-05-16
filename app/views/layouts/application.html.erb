@@ -10,14 +10,18 @@
 <div>
 	<ul class="nav nav-pills pull-right">
 		<li><%= link_to "Home", root_url, class:"btn btn-erik"%> &nbsp &nbsp</li>
-
 		<li><%= link_to "Customers Controller", customers_url, class:"btn btn-erik"%>  &nbsp</li>
 		<li><%= link_to "Bills Controller", bills_url, class:"btn btn-erik"%> &nbsp &nbsp</li>
 		<li><%= link_to "Customers List", customer_list_url, class:"btn btn-erik"%> &nbsp &nbsp</li>
 		<li><%= link_to "Bills List", bill_list_url, class:"btn btn-erik"%> &nbsp &nbsp</li>
-
-
 		<li><%= link_to "About", about_url, class:"btn btn-erik"%></li>
+		<% if user_signed_in? %>
+		<li class="btn btn-erik">Signed in as &nbsp <%= current_user.name %> </li>
+		<li class= "btn-erik" > <%= link_to "Not you? sign out", destroy_user_session_path, :method => :delete%></li>
+		<%else%>
+		<li><%= link_to "Sign up", new_user_registration_path, class: "btn-erik"  %></li> <li><%= link_to"Sign in", new_user_session_path, class: "btn-erik"  %></li>
+		<% end %>
+
 	</ul>
 </div>
 <br>
