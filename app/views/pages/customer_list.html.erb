@@ -2,7 +2,7 @@
 <br>
 <%= link_to "Create New Customer", '/customers/new', class: "btn btn-erik"%>
 
-<table id="client_list" class="table table-hover" style="font-size:10px"style="font-size:10px">
+<table id="client_list" class="table table-hover" style="font-size:10px">
     <thead  bgcolor="#008AB8">
       <tr>
         <th>Name</th>
@@ -35,9 +35,3 @@
       <%end%>
     </tbody>
   </table>
-  
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('#client_list').dataTable();
-    });
-</script>
