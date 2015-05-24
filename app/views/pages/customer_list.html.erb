@@ -21,8 +21,8 @@
     <tbody >
       <% @customers.each do |customer| %>
         <tr>
-          <td><%= link_to customer.name, customer %></td>
-          <td><%= customer.customer_id %></td>
+          <td><%= customer.name %></td>
+          <td><%= link_to customer.customer_id , customer%></td>
           <td><%= customer.mac_address %></td>
           <td><%= customer.ip_address %></td>
           <td><%= customer.connection_type %></td>
