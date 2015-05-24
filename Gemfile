@@ -12,12 +12,12 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'	
 gem 'sunspot_rails', '~> 2.2.0'
 gem 'devise'
-
+gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
 group :development do
   gem 'sunspot_solr'
 end
 
-gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
+
 group :assets do 
  	gem 'sass-rails', '~> 5.0'
 	gem 'coffee-rails', '~> 4.1.0'

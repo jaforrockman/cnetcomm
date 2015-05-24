@@ -11,16 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150516124926) do
+ActiveRecord::Schema.define(version: 20150523141229) do
 
   create_table "bills", force: :cascade do |t|
-    t.string   "customer_name"
     t.decimal  "bill_amount"
     t.date     "valid_up_to"
     t.string   "transaction_type"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
     t.string   "customer_id"
+  end
+
+  create_table "costs", force: :cascade do |t|
+    t.datetime "date"
+    t.string   "name"
+    t.decimal  "cost_amount"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "kind"
   end
 
   create_table "customers", force: :cascade do |t|

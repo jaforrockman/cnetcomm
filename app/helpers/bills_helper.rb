@@ -3,6 +3,4 @@ module BillsHelper
 		Bill.all.sum(:bill_amount)
 	end
 
-	
-
 end

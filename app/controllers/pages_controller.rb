@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   end
 
   def customer_list
-     @customers = Customer.all 
+     @customers = Customer.all.order(:name) 
   end
 def admin_panel
     
@@ -17,6 +17,10 @@ end
     @bill_by_months = @bills.group_by{|bill| bill.created_at.strftime("%B %Y")}
   end
 
+def cost_list
+    @costs = Cost.all.order("created_at DESC")
+    @cost_by_months = @costs.group_by{|cost| cost.date.strftime("%B %Y")}
+  end
 
   def about
   end

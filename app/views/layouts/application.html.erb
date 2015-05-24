@@ -12,6 +12,8 @@
 		<li><%= link_to "Home", root_url, class:"btn btn-erik"%> &nbsp &nbsp</li>
 		<li><%= link_to "Customers List", customer_list_url, class:"btn btn-erik"%> &nbsp &nbsp</li>
 		<li><%= link_to "Bills List", bill_list_url, class:"btn btn-erik"%> &nbsp &nbsp</li>
+		<li><%= link_to "Cost_List", cost_list_url, class:"btn btn-erik"%> &nbsp &nbsp</li>
+		<li><%= link_to "Cost List", costs_url, class:"btn btn-erik"%> &nbsp &nbsp</li>
 		<li><%= link_to "About", about_url, class:"btn btn-erik"%></li>
 		<% if user_signed_in? %>
 		<li class="btn btn-erik">Signed in as &nbsp <%= current_user.name %> </li>
