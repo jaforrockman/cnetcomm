@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   end
 
   def customer_list
-     @customers = Customer.all.order(:name) 
+     @customers = Customer.all.order(:customer_id) 
   end
 def admin_panel
     
