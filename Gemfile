@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sunspot_rails', '~> 2.2.0'
 gem 'devise'
 gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
+gem 'simple_form'
 group :development do
   gem 'sunspot_solr'
 end

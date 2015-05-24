@@ -58,7 +58,7 @@
  
   </table>
 </p >
-<div align="center"><%= link_to 'Edit Customer Details', edit_customer_path(@customer), class: "btn btn-erik" %> 
+<div align="center"><%= link_to 'Edit Customer Details', edit_customer_path(@customer), class: "btn btn-erik" %> <%= link_to 'Crate New Bill', new_bill_path, class: "btn btn-erik" %> 
 
 </div>
 
@@ -91,6 +91,8 @@
         <td><%=bill.valid_up_to.strftime "%d %B %Y" %></td>
        
         <td><%=bill.bill_amount %></td>
+
+        <td><%=link_to "Edit Bill", edit_bill_path, class: "btn btn-erik" %></td>
         
         
       <%end%>
